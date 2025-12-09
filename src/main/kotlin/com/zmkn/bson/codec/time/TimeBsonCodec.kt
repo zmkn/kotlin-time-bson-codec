@@ -14,9 +14,7 @@ object TimeBsonCodec {
         )
     }
 
-    fun generateCodec(vararg codecs: () -> Codec<*>): List<Codec<*>> {
-        return codecs.map {
-            it()
-        }
+    fun generateCodec(vararg codecs: () -> Codec<*>): List<Codec<*>> = codecs.map {
+        it()
     }
 }
