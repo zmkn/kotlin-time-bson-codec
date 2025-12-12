@@ -65,8 +65,8 @@ if (localProperties.getProperty("mavenPublish.enable") == "true") {
                 artifactId = project.name
                 from(components["java"])
                 pom {
-                    name.set("Kotlinx Datetime Bson Codec")
-                    description.set("Kotlinx datetime codec for Bson")
+                    name.set("Kotlin Time Bson Codec")
+                    description.set("Kotlin time codec for Bson")
                     url.set("https://github.com/zmkn/kotlin-time-bson-codec")
                     inceptionYear.set("2025")
                     licenses {
@@ -124,11 +124,11 @@ if (localProperties.getProperty("jreleaser.enable") == "true") {
 
     configure<JReleaserExtension> {
         project {
-            name.set("Kotlinx Datetime Bson Codec")
+            name.set("Kotlin Time Bson Codec")
 
             // A short description (60 chars max).
             //  Only if configured distributions or announcers.
-            description.set("Kotlinx datetime codec for Bson")
+            description.set("Kotlin time codec for Bson")
 
             // A list of author names.
             //  Only if configured distributions or announcers.
